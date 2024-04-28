@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: tmd
+    database: envilink
+    schema: tmd
+    tables:
+      - name: weather_today_test
+  - name: pcd
+    database: envilink
+    schema: pcd
+    tables:
+      - name: air4thai_test
+  - name: ccdc
+    database: envilink
+    schema: ccdc
+    tables:
+      - name: dustboy_test
+  - name: nt
+    database: envilink
+    schema: nt
+    tables:
+      - name: rguard_test
