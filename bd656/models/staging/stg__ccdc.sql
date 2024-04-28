@@ -12,4 +12,4 @@ from {{ source('ccdc', 'dustboy_test') }}
 where
     ingest_datetime BETWEEN DATETIME("2024-04-01")
     AND DATETIME_ADD("2024-04-01", INTERVAL 30 DAY)
-limit 3
+-- limit 3

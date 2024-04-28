@@ -12,4 +12,4 @@ from {{ source('pcd', 'air4thai_test') }}
 -- where
 --     ingest_datetime BETWEEN DATETIME("2024-03-28")
 --     AND DATETIME_ADD("2024-03-28", INTERVAL 10 DAY)
-limit 3
+-- limit 3
