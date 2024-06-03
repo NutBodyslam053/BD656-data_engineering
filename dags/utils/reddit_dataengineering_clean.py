@@ -8,7 +8,7 @@ def convert_to_datetime(timestamp):
 
 def reddit_dataengineering_clean(
     json_data: dict,
-    schema_fields: dict,
+    # schema_fields: dict,
     ingest_datetime: datetime,
 ) -> pd.DataFrame:
 
@@ -54,12 +54,12 @@ def reddit_dataengineering_clean(
 
     # Generate column "ingest_date" and "ingest_datetime"
     df["ingest_date"] = ingest_datetime.date()
-    df["ingest_datetime"] = ingest_datetime.replace(microsecond=0)
-    df["ingest_datetime"] = df["ingest_datetime"].dt.tz_localize(None)
-    df["ingest_datetime"] = df["ingest_datetime"].astype("datetime64[ms]")
+    # df["ingest_datetime"] = ingest_datetime.replace(microsecond=0)
+    # df["ingest_datetime"] = df["ingest_datetime"].dt.tz_localize(None)
+    # df["ingest_datetime"] = df["ingest_datetime"].astype("datetime64[ms]")
 
-    # Rearange columns
-    column_names = pd.DataFrame(schema_fields)["name"].to_list()
-    df = df[column_names].copy()
+    # # Rearange columns
+    # schema_col_names = pd.DataFrame(schema_fields)["name"].to_list()
+    # df = df[df.columns.intersection(schema_col_names)].copy()
 
     return df

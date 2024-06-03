@@ -1,0 +1,64 @@
+{
+    "reddit_client_id": "qLfCnrNDwmYsBM1I1bMb8Q",
+    "reddit_password": "Loveann1412",
+    "reddit_secret_key": "aSMYmxS-q-UsMtVM5VU0srMgaaQZsg",
+    "reddit_username": "nutbodyslam053",
+    "schema_fields_reddit_dataengineering": [
+        {
+            "mode": "NULLABLE",
+            "name": "submission_date",
+            "type": "DATETIME"
+        },
+        {
+            "mode": "NULLABLE",
+            "name": "submission_id",
+            "type": "STRING"
+        },
+        {
+            "mode": "NULLABLE",
+            "name": "author_name",
+            "type": "STRING"
+        },
+        {
+            "mode": "NULLABLE",
+            "name": "submission_title",
+            "type": "STRING"
+        },
+        {
+            "mode": "NULLABLE",
+            "name": "submission_text",
+            "type": "STRING"
+        },
+        {
+            "mode": "NULLABLE",
+            "name": "num_comments",
+            "type": "INTEGER"
+        },
+        {
+            "mode": "NULLABLE",
+            "name": "score",
+            "type": "INTEGER"
+        },
+        {
+            "mode": "NULLABLE",
+            "name": "ups",
+            "type": "INTEGER"
+        },
+        {
+            "mode": "NULLABLE",
+            "name": "downs",
+            "type": "INTEGER"
+        },
+        {
+            "mode": "NULLABLE",
+            "name": "upvote_ratio",
+            "type": "FLOAT"
+        },
+        {
+            "mode": "NULLABLE",
+            "name": "category",
+            "type": "STRING"
+        }
+    ],
+    "service_account_key_path": "/opt/service-account-keys/envilink-7f4fac3111ec.json"
+}

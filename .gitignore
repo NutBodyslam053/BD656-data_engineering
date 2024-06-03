@@ -162,3 +162,10 @@ cython_debug/
 # Airflow
 logs/
 service-account-keys/
+
+# Notebook
+tests/
+
+# etc.
+dbt_envilink/
+metabase-data-volume/
