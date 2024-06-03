@@ -43,8 +43,8 @@ Student ID: 65130459
 
 Clone the repository to local
 ```bash
-git clone 
-cd 
+git clone https://github.com/NutBodyslam053/BD656-data_engineering.git
+cd BD656-data_engineering
 ```
 
 ```bash
